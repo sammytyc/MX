@@ -4,7 +4,7 @@ function calculateDiscount(price, memberLevel) {
   }
   let finalPrice;
   if (memberLevel === 'gold') {
-    finalPrice = price * 0.8;
+    finalPrice = price * 0.85;
   } else if (memberLevel === 'silver') {
     finalPrice = price * 0.9;
   } else {

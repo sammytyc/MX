@@ -55,18 +55,3 @@ describe('Discount Calculator', () => {
   });
 });
 
-test('calculateDiscount function exists', () => {
-  calculateDiscount(100, 'gold');
-  // no expect — just calls the function
-});
-
-test('mock returns the right value', () => {
-  const mockFn = jest.fn().mockReturnValue(80);
-  expect(mockFn()).toBe(80);
-  // this only tests jest.fn() itself — calculateDiscount is never involved
-});
-
-test('discounted price is less than original', () => {
-  const result = calculateDiscount(100, 'gold');
-  expect(result).toBeLessThan(101); // 101 is intentionally too high — always true
-});
